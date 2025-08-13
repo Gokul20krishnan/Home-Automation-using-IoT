@@ -10,7 +10,7 @@ String buttons[] = {"Light", "Fan"};  // names of connected devices, DOES NOT WO
 int pin[] = {5, 4};                      // pin number to which the executing device is connected (relay, transistor, etc.)
 
 bool protection = 1;                      //access rights: 0 - available to all users, 1 - access by Chat ID, if it is included in chatID_acces.
-int chatID_acces[] = {880770117, 1832016792}; // Chat IDs that are allowed access are ignored if protection = 0.
+int chatID_acces[] = {}; // Chat IDs that are allowed access are ignored if protection = 0.
                              // Note: by the command / start in Telegram, if the user does not have permission to control the device, the bot will issue a Chat ID
                              // this user so that it can be added to chatID_acces. Chat ID is a unique chat number that is issued
                              // the user who started communicating with the bot.
